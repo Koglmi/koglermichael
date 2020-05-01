@@ -1,3 +1,3 @@
-window.addEventListener('click', () => {
+window.addEventListener('load', () => {
     
 })
