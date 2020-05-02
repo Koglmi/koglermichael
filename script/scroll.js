@@ -2,7 +2,14 @@ window.addEventListener('load', () => {
     window.addEventListener('scroll', () => {
         const nav = document.querySelector('nav');
         nav.classList.toggle('sticky', window.scrollY > 0);
+    
+        if(window.scrollY > 0) {
+            homeSection.style.height = '90vh'
+        } else {
+            homeSection.style.height = '100vh';
+        }
     })
+    
 
     const nav = document.querySelector('nav');
     const homeNav = document.getElementById('homeNav');
@@ -29,18 +36,18 @@ window.addEventListener('load', () => {
     aboutNav.addEventListener('click', () => {
         if(window.scrollY > 0) {
             window.scrollTo({
-                top: homeSection.clientHeight + 2,
+                top: homeSection.clientHeight + 1,
                 left: 0,
                 behavior: 'smooth'
             })
-            // console.log(homeSection.clientHeight);
+            console.log(homeSection.clientHeight + 1);
         } else {
             window.scrollTo({
-                top: homeSection.clientHeight - nav.clientHeight + 42,
+                top: homeSection.clientHeight - nav.clientHeight + 44,
                 left: 0,
                 behavior: 'smooth'
             })
-            // console.log(homeSection.clientHeight - nav.clientHeight + 40);
+            console.log(homeSection.clientHeight - nav.clientHeight + 41);
         }
         
     })
@@ -48,13 +55,13 @@ window.addEventListener('load', () => {
     skillsNav.addEventListener('click', () => {
         if (window.scrollY > 0) {
             window.scrollTo({
-                top: homeSection.clientHeight + aboutSection.clientHeight + 2,
+                top: homeSection.clientHeight + aboutSection.clientHeight + 1,
                 left: 0,
                 behavior: 'smooth'
             })
         } else {
             window.scrollTo({
-                top: homeSection.clientHeight + aboutSection.clientHeight - nav.clientHeight + 42,
+                top: homeSection.clientHeight + aboutSection.clientHeight - nav.clientHeight + 41,
                 left: 0,
                 behavior: 'smooth'
             })
@@ -65,13 +72,13 @@ window.addEventListener('load', () => {
     workNav.addEventListener('click', () => {
         if (window.scrollY > 0) {
             window.scrollTo({
-                top: homeSection.clientHeight + aboutSection.clientHeight + skillsSection.clientHeight + 2,
+                top: homeSection.clientHeight + aboutSection.clientHeight + skillsSection.clientHeight + 1,
                 left: 0,
                 behavior: 'smooth'
             })
         } else {
             window.scrollTo({
-                top: homeSection.clientHeight + aboutSection.clientHeight + skillsSection.clientHeight - nav.clientHeight + 42,
+                top: homeSection.clientHeight + aboutSection.clientHeight + skillsSection.clientHeight - nav.clientHeight + 41,
                 left: 0,
                 behavior: 'smooth'
             })
@@ -82,13 +89,13 @@ window.addEventListener('load', () => {
     contactNav.addEventListener('click', () => {
         if (window.scrollY > 0) {
             window.scrollTo({
-                top: homeSection.clientHeight + aboutSection.clientHeight + skillsSection.clientHeight + workSection.clientHeight + 2,
+                top: homeSection.clientHeight + aboutSection.clientHeight + skillsSection.clientHeight + workSection.clientHeight + 1,
                 left: 0,
                 behavior: 'smooth'
             })  
         } else {
             window.scrollTo({
-                top: homeSection.clientHeight + aboutSection.clientHeight + skillsSection.clientHeight + workSection.clientHeight - nav.clientHeight + 42,
+                top: homeSection.clientHeight + aboutSection.clientHeight + skillsSection.clientHeight + workSection.clientHeight - nav.clientHeight + 41,
                 left: 0,
                 behavior: 'smooth'
             })  
