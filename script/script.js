@@ -1,3 +1,2 @@
 window.addEventListener('load', () => {
-    
 })

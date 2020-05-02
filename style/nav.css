@@ -5,11 +5,14 @@ nav {
     justify-content: center;
     align-items: center;
     flex-direction: reverse;
-    background-color: #485b6e;
+    background-color: transparent;
     justify-content: space-around;
     font-size: 125%;
     top: 0;
-    position: sticky;
+    left: 0;
+    position: fixed;
+    padding: 20px 0;
+    transition: .5s;
 }
 
 nav span {
@@ -29,3 +32,51 @@ nav ul li {
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+
+nav ul li:hover {
+    cursor: pointer;
+}
+
+nav.sticky {
+    background-color: #e7ecf3;
+    /* dunklere Farbe #485b6e; */
+    padding: 0;
+    position: sticky;
+}
+
+/* nav.sticky span {
+    letter-spacing: 2px;
+} */
+/* nav.sticky ul {
+    display: flex;
+    flex-direction: reverse;
+    list-style-type: none;
+} */
+/* nav.sticky ul li {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+} */
+/* 
+#homeNav:hover, #aboutNav:hover, #skillsNav:hover, #workNav:hover, #contactNav:hover {
+    cursor: pointer;
+} 
+
+nav ul li::after {
+    content: '';
+    display: block;
+
+    width: 0%;
+    height: 3px;
+    
+    margin-top: 3px;
+    border-radius: 3px;
+    background-color: coral;
+
+    transition: width .2s ease-in-out;
+} 
+
+nav ul li.current::after */
