@@ -40,14 +40,14 @@ window.addEventListener('load', () => {
                 left: 0,
                 behavior: 'smooth'
             })
-            console.log(homeSection.clientHeight + 1);
+            // console.log(homeSection.clientHeight + 1);
         } else {
             window.scrollTo({
                 top: homeSection.clientHeight - nav.clientHeight + 44,
                 left: 0,
                 behavior: 'smooth'
             })
-            console.log(homeSection.clientHeight - nav.clientHeight + 41);
+            // console.log(homeSection.clientHeight - nav.clientHeight + 41);
         }
         
     })
