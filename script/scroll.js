@@ -9,7 +9,6 @@ window.addEventListener('load', () => {
             homeSection.style.height = '100vh';
         }
     })
-    
 
     const nav = document.querySelector('nav');
     const homeNav = document.getElementById('homeNav');
@@ -46,7 +45,7 @@ window.addEventListener('load', () => {
             // console.log(homeSection.clientHeight + 1);
         } else {
             window.scrollTo({
-                top: homeSection.clientHeight - nav.clientHeight + 44, //44,
+                top: homeSection.clientHeight - nav.clientHeight + 41,
                 left: 0,
                 behavior: 'smooth'
             })
