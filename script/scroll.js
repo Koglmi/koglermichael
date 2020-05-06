@@ -24,6 +24,9 @@ window.addEventListener('load', () => {
     const workSection = document.getElementById('work');
     const contactSection = document.getElementById('contact');
 
+    // const hoehe = window.innerHeight / 100 * 10;
+    // console.log(hoehe);
+
     homeNav.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
@@ -43,7 +46,7 @@ window.addEventListener('load', () => {
             // console.log(homeSection.clientHeight + 1);
         } else {
             window.scrollTo({
-                top: homeSection.clientHeight - nav.clientHeight + 44,
+                top: homeSection.clientHeight - nav.clientHeight + 44, //44,
                 left: 0,
                 behavior: 'smooth'
             })

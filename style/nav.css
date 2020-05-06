@@ -1,3 +1,6 @@
+#menuWrapper {
+    display: none;
+}
 nav {
     width: 100vw;
     height: 10vh;
@@ -12,12 +15,13 @@ nav {
     position: fixed;
     background-color: transparent;
     padding: 20px 0;
-    transition: .7s;
+    transition: .7s ease-in-out;
 }
 
 nav span {
     letter-spacing: 2px;
     font-size: 150%;
+    display: flex;
 }
 nav ul {
     display: flex;
@@ -44,3 +48,94 @@ nav.sticky {
     padding: 0;
     position: sticky;
 }
+
+/* Burger menu smartphone */
+
+/* @media screen and (max-aspect-ratio: 1/1) {
+    #menuWrapper {
+        width: 10vw;
+        height: 10vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }    
+
+    #menuBurger {
+        width: 50px;
+        height: 55px;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+  
+    .bar {
+        width: 50px;
+        height: 5px;
+        background: white;
+        transition: ease-in-out all 300ms;
+    }
+  
+    #barOne {
+        position: absolute;
+        top: 0px;
+    }
+    
+    #barTwo{
+        position: absolute;
+        top: 20px;
+    }
+
+    #barThree {
+        position: absolute;
+        top: 40px;
+    }
+    
+    .goToMiddle {
+        top: 20px !important;
+    }
+  
+    .scale {
+        transform: scale(1.5) !important;
+        opacity: 0;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    .opacity {
+        opacity: 0;
+    }
+    
+    .turnLeft {
+        transform: rotateZ(45deg);
+    }
+    
+    .turnRight {
+        transform: rotateZ(-45deg);
+    }
+  
+    nav {
+        left: -100vw;
+        width: 100vh;
+        height: 10vh;
+        display: flex;
+        flex-direction: column;
+    }; 
+
+    nav span {
+        letter-spacing: 2px;
+        font-size: 150%;
+        color: violet;
+        display: flex;
+        flex-direction: column;
+    }    
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+} */

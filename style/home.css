@@ -1,13 +1,32 @@
 #home {
     height: 100vh;
     width: 100vw;
-    background-color: #ffff00;
     top: 10vh;
     display: flex;
-    align-items: flex-start;
+    background: #efefef url("../image/background.jpg") no-repeat;
+    background-position: center center;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    /* transition: height 100ms ease-in-out; */
 }
 
-#backgroundimage {
-    width: 100%;
-    height: 100%
+#home h1 {
+    width: 30vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition: height 300ms ease-in; */
+    font-size: 3em;
+    /* color: #10bf9d; */
+    color: #2cc2e6;
+    /* writing-mode: vertical-lr; */
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
+/* @media screen and (max-aspect-ratio: 1/1) {
+    #home {
+        height: 100vh;
+        width: 100vw;
+    }
+} */
