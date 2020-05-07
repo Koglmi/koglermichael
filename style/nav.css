@@ -16,6 +16,8 @@ nav {
     background-color: transparent;
     padding: 20px 0;
     transition: .5s ease-in-out;
+    opacity: 1;
+    z-index: 99;
 }
 
 nav span {
