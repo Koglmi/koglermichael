@@ -1,6 +1,7 @@
 #about {
     height: 90vh;
     width: 100vw;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,9 +11,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 70%;
     height: 80%;
     flex-direction: column;
+}
+
+#headlineAboutMe {
+    font-size: 2em;
 }
 
 #partOfAbout {
@@ -29,7 +34,7 @@
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 60%;
+    height: 70%;
     flex-direction: row;
 }
 
@@ -41,10 +46,6 @@
     height: 80%;
     flex-direction: column;
     font-size: 1.1em;
-}
-
-#partPboutMeText p {
-    
 }
 
 #aboutMePicture {
